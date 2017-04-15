@@ -60,8 +60,8 @@ The files on the MapR snapshots are accessible (not corrupted), and represent th
 	      `hadoop fs -text /user/cloudera/.snapshot/snapshot3/Hadoop_File.txt | grep SNAPTEST_TIMESTAMP | tail -3`  
 	      `hadoop fs -text /user/cloudera/Hadoop_File.txt | grep SNAPTEST_TIMESTAMP | tail -3`  
 
-##Results
+## Results
 All four files are identical, showing that the snapshots continue to be written to, after they should be frozen.    Each output file will contain timestamps that are later than the time that the snapshot was taken.  
 
-#Conclusions:
+# Conclusions:
 Comparing the results from both tests makes it clear that HDFS snapshots do not provide any point in time consistency, whereas MapR snapshots do.  This makes MapR snapshots useful for backups, auditing, applications based on multiple files, or "data versioning" of a real time, streaming system.    HDFS snapshots are not usable for any of these use cases.
