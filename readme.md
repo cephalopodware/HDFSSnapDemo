@@ -9,7 +9,7 @@ Demo to compare how MapR and HDFS snapshots work.   This demo will stream log en
 4.  rundemo_mapr.sh - script to run the demo on a MapR system (also cleans up previous tests)
 5.  rundemo_cdh.sh - script to run the demo on a CDH system. (also cleans up previous tests)
 
-#MapR Instructions:
+# MapR Instructions:
 1.   Run as a user that has rights to create and manage volumes
 2.   Copy demo files to an accessible location on MapR system.   Default for demo is /usr/local/snapshot_demo.
 3.   Examine log.entries contents.
@@ -36,7 +36,7 @@ The files on the MapR snapshots are accessible (not corrupted), and represent th
 
 
 
-#CDH (or any other distro) Instructions:
+# CDH (or any other distro) Instructions:
 1.   Run as a user that has ownership of the directory to be used for snapshots.     Demo default is the "cloudera" user.
 2.   Copy demo files to an accessible location on the CDH system.   Default for demo is /usr/local/snapshot_demo.
 3.   Examine log.entries contents.
